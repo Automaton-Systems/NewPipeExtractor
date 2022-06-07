@@ -149,19 +149,19 @@ public final class YoutubeParsingHelper {
      * ({@code https://www.youtube.com/sw.js}) (also applies for YouTube Music).
      */
     private static final String HARDCODED_CLIENT_VERSION = "2.20220315.01.00";
-    private static final String HARDCODED_KEY = "AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8";
+    public static String HARDCODED_KEY = "";
 
     /**
      * The InnerTube API key used by the {@code ANDROID} client. Found with the help of
      * reverse-engineering app network requests.
      */
-    private static final String ANDROID_YOUTUBE_KEY = "AIzaSyA8eiZmM1FaDVjRy-df2KTyQ_vz_yYM39w";
+    public static String ANDROID_YOUTUBE_KEY = "";
 
     /**
      * The InnerTube API key used by the {@code iOS} client. Found with the help of
      * reverse-engineering app network requests.
      */
-    private static final String IOS_YOUTUBE_KEY = "AIzaSyB-63vPrdThhKuerbB2N_l7Kwwcxj6yUAc";
+    public static String IOS_YOUTUBE_KEY = "";
 
     /**
      * The hardcoded client version of the Android app used for InnerTube requests with this
@@ -186,8 +186,7 @@ public final class YoutubeParsingHelper {
     private static String clientVersion;
     private static String key;
 
-    private static final String[] HARDCODED_YOUTUBE_MUSIC_KEY =
-            {"AIzaSyC9XL3ZjWddXya6X74dJoCTL-WEYFDNX30", "67", "1.20220309.01.00"};
+    public static String[] HARDCODED_YOUTUBE_MUSIC_KEY = null;
     private static String[] youtubeMusicKey;
 
     private static boolean keyAndVersionExtracted = false;
